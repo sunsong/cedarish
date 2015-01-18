@@ -5,10 +5,10 @@ set -e
 set -x
 
 cat > /etc/apt/sources.list <<EOF
-deb http://archive.ubuntu.com/ubuntu trusty main
-deb http://archive.ubuntu.com/ubuntu trusty-security main
-deb http://archive.ubuntu.com/ubuntu trusty-updates main
-deb http://archive.ubuntu.com/ubuntu trusty universe
+deb http://cn.archive.ubuntu.com/ubuntu trusty main
+deb http://cn.archive.ubuntu.com/ubuntu trusty-security main
+deb http://cn.archive.ubuntu.com/ubuntu trusty-updates main
+deb http://cn.archive.ubuntu.com/ubuntu trusty universe
 EOF
 
 apt-get update
@@ -54,6 +54,7 @@ apt-get install -y --force-yes \
     telnet \
     zip \
     zlib1g-dev \
+    gettext \
     #
 
 # locales
